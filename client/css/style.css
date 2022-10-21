@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/** Ici sera les polices d'écriture. */
+@font-face {
+  font-family: "Comfortaa-Regular";
+  src: url("/res/font/Comfortaa-Regular.ttf");
+}
+@font-face {
+  font-family: "MordernSans-Light";
+  src: url("/res/font/ModernSans-Light.otf");
+}
+/** Ici sera les webkit */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 15px;
+}
+
+html {
+  scroll-behavior: smooth;
+  /** Ici seront les variable CSS */
+  --wt-text-primary-font: "Comfortaa-Regular";
+  --wt-text-seconds-font: "MordernSans-Light";
+  --wt-text-seconds-font-size: 25px;
+  --wt-text-link-text-decoration-default: none;
+  --wt-text-seconds-font-wheight: 600;
+  --wt-height-header-bar: 90px;
+  --wt-transparent-object: transparent;
+  --wt-global-none-object: none;
+  --wt-global-color-white-default: rgba(255, 255, 255, 1);
+  --wt-global-padding-0-default: 0;
+  --wt-global-margin-auto: auto;
+  --wt-height-header: 95vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  height: 500vh;
+}
+body header {
+  object-fit: cover;
+  background: linear-gradient(90deg, rgb(82, 82, 222) 0%, rgb(0, 212, 255) 100%);
+  height: var(--wt-height-header, 95vh);
+}
+body header .header-bar-content {
+  width: 100%;
+  height: var(--wt-height-header-bar, 90px);
+  background: rgba(255, 255, 255, 0);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  display: flex;
+}
+body header .search-bar-content {
+  margin: var(--wt-global-margin-auto, auto);
+  padding: 0 25px;
+  height: 45px;
+  border: 2px solid var(--wt-global-color-white-default, rgb(255, 255, 255));
+  width: 450px;
+  border-radius: 50px;
+}
+body header .form-content {
+  width: max-content;
+  margin: auto;
+  padding: 12.5px 0;
+}
+body header .search-content-form-action {
+  width: max-content;
+  margin: var(--wt-global-margin-auto, auto);
+}
+body header .search-bar {
+  background: var(--wt-transparent-object, transparent);
+  border: var(--wt-global-none-object, none);
+  margin: var(--wt-global-margin-auto, auto);
+  outline: var(--wt-global-none-object, none);
+  color: var(--wt-global-color-white-default, rgb(255, 255, 255));
+  font-family: var(--wt-text-seconds-font, "MordernSans-Light");
+  width: 400px;
+  height: 20px;
+}
+body header .search-bar::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+}
+body header .link-content-account {
+  width: max-content;
+  margin: auto;
+}
+body header .unlister-login-signup-content {
+  padding: var(--wt-global-padding-0-default, 0);
+  display: flex;
+}
+body header .lister-sign-up, body header .lister-login {
+  list-style: none;
+  margin: 0 25px;
+}
+body header .login {
+  text-decoration: var(--wt-text-link-text-decoration-default, none);
+  color: var(--wt-global-color-white-default, rgb(255, 255, 255));
+  font-family: var(--wt-text-seconds-font, "MordernSans-Light");
+  font-weight: var(--wt-text-seconds-font-wheight, 600);
+  padding: 2px 0;
+}
+body header .login:hover {
+  text-decoration: underline;
+}
+body header .sign-up {
+  padding: 15px 25px;
+  background: rgb(255, 255, 255);
+  color: #2c4cff;
+  font-family: var(--wt-text-seconds-font, "MordernSans-Light");
+  font-weight: var(--wt-text-seconds-font-wheight, 600);
+  text-decoration: var(--wt-text-link-text-decoration-default, none);
+  border-radius: 15px;
+  transition: 0.2s;
+}
+body header .sign-up:hover {
+  transition: 0.3s;
+  box-shadow: 0 0 50px rgba(54, 54, 54, 0.6156862745);
+  background: rgba(255, 255, 255, 0.9);
+}
+body header .title-main {
+  margin: 200px auto 50px auto;
+  width: max-content;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+}
+body header h1 {
+  margin: 10px;
+  font-family: var(--wt-text-primary-font, "Comfortaa-Regular");
+}
+body header .parag-header {
+  font-family: var(--wt-text-seconds-font, "MordernSans-Light");
+  color: var(--wt-global-color-white-default, rgb(255, 255, 255));
+  text-align: center;
+  font-size: var(--wt-text-seconds-font-size, 25px);
+  font-weight: var(--wt-text-seconds-font-wheight, 600);
+}
+body header .header-plus-content {
+  width: max-content;
+  margin: 100px auto 2.5px auto;
+}
+body header .unlister-header-plus {
+  margin: 0;
+  padding: var(--wt-global-padding-0-default, 0);
+}
+body header .lister-header-plus {
+  list-style: var(--wt-global-none-object, none);
+}
+body header .link-header-plus {
+  padding: 15px 25px;
+  text-decoration: var(--wt-global-none-object, none);
+  font-family: var(--wt-text-seconds-font, "MordernSans-Light");
+  background: var(--wt-global-color-white-default, rgb(255, 255, 255));
+  border-radius: 15px;
+  font-weight: var(--wt-text-seconds-font-wheight, 600);
+  color: #2c4cff;
+}
+body header .boat-content {
+  position: absolute;
+  right: 100px;
+  top: 480px;
+  size: -1;
+  transform: rotate(350deg);
+}
+body header .boat {
+  height: 300px;
+  transform: scaleX(-1);
+}
+body header .wave-content {
+  margin: 50px 0;
+}
+body main {
+  padding: 100px 0;
+}
+body main .section-one {
+  display: flex;
+}
+body main .graphics-contents {
+  width: 600px;
+  height: 400px;
+  margin: 100px;
+  padding: 50px;
+  background-color: rgba(185, 185, 185, 0.4588235294);
+  border-radius: 50px;
+  box-shadow: 0 0 35px #8a8a8a;
+}
+body main .title-seconds-content {
+  margin: 100px auto auto 10px;
+  width: 600px;
+}
+body main .title-seconds-primary {
+  font-size: 50px;
+  font-family: var(--wt-text-primary-font, "Comfortaa-Regular");
+}
+body main .mega-charactere {
+  background: -webkit-linear-gradient(90deg, rgb(82, 82, 222) 0%, rgb(0, 212, 255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*# sourceMappingURL=style.css.map */
