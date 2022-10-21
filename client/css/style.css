@@ -174,6 +174,7 @@ body header .wave-content {
 }
 body main {
   padding: 100px 0;
+  /** Propriéter gérer en CSS */
 }
 body main .section-one {
   display: flex;
@@ -199,6 +200,60 @@ body main .mega-charactere {
   background: -webkit-linear-gradient(90deg, rgb(82, 82, 222) 0%, rgb(0, 212, 255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+body main .subscribe-content {
+  padding: 100px;
+  width: 1500px;
+  border-radius: 10px;
+  height: 400px;
+  background: linear-gradient(90deg, rgb(82, 82, 222) 0%, rgb(0, 212, 255) 100%);
+  margin: 300px auto;
+}
+body main .subscribe-all {
+  width: auto;
+  height: 400px;
+  position: relative;
+}
+body main .subscribe-one {
+  position: absolute;
+  z-index: 2;
+  width: 400px;
+  top: -200px;
+  right: 0;
+  height: 800px;
+  background: var(--wt-global-color-white-default, rgb(255, 255, 255));
+  box-shadow: 0 0 50px rgba(138, 138, 138, 0.431372549);
+}
+body main .button-content {
+  position: absolute;
+  right: 250px;
+  top: 40%;
+  transition: 0.3s;
+}
+body main .button-hover {
+  border-radius: 50%;
+  background: var(--wt-global-none-object, none);
+  border: 2px solid var(--wt-global-color-white-default, rgb(255, 255, 255));
+  padding: 25px;
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+body main .button-hover:hover {
+  transition: 0.3s;
+  box-shadow: 0 0 50px #8a8a8a;
+  background: rgba(255, 255, 255, 0.3);
+}
+body main .vector-arrow {
+  height: 25px;
+  width: 25px;
+  fill: var(--wt-global-color-white-default, rgb(255, 255, 255));
+  transform: scaleX(-1);
+}
+body main .active-button-vector {
+  transition: 0.2s;
+  right: 500px;
 }
 
 /*# sourceMappingURL=style.css.map */
