@@ -43,8 +43,8 @@ body {
 }
 body header {
   object-fit: cover;
-  height: var(--wt-height-header, 95vh);
   background: linear-gradient(90deg, rgb(82, 82, 222) 0%, rgb(0, 212, 255) 100%);
+  height: var(--wt-height-header, 95vh);
 }
 body header .header-bar-content {
   width: 100%;
@@ -139,34 +139,14 @@ body header .date-class {
   color: var(--wt-global-color-white-default, rgb(255, 255, 255));
   margin: 0;
 }
-body header .deg-content {
-  position: absolute;
-  right: 155px;
-  color: var(--wt-global-color-white-default, rgb(255, 255, 255));
-  font-family: var(--wt-text-primary-font, "Comfortaa-Regular");
-  font-weight: var(--wt-text-seconds-font-wheight, 600);
-  font-size: 25px;
-  top: 60px;
-}
 body header .weather-img-content {
   width: max-content;
   height: max-content;
-  margin: 5px auto;
+  margin: auto;
 }
 body header .weather-img {
-  width: 100px;
-  height: 100px;
-}
-body header .description-content {
-  width: max-content;
-  margin: 0 auto;
-}
-body header .description {
-  font-size: 20px;
-  color: var(--wt-global-color-white-default, rgb(255, 255, 255));
-  font-family: var(--wt-text-primary-font, "Comfortaa-Regular");
-  font-weight: var(--wt-text-seconds-font-wheight, 600);
-  text-transform: capitalize;
+  width: 200px;
+  height: 200px;
 }
 body header .title-main {
   margin: 200px auto 50px auto;
@@ -218,15 +198,6 @@ body header .boat {
 }
 body header .wave-content {
   margin: 50px 0;
-}
-body .sunride {
-  background: linear-gradient(90deg, rgb(255, 141, 64) 0%, rgb(255, 225, 187) 100%);
-}
-body .clear {
-  background: linear-gradient(90deg, rgb(82, 82, 222) 0%, rgb(0, 212, 255) 100%);
-}
-body .sunset {
-  background: linear-gradient(90deg, rgb(209, 84, 0) 0%, rgb(255, 201, 134) 100%);
 }
 body .night {
   background: linear-gradient(90deg, rgb(55, 54, 54) 0%, rgb(115, 108, 108) 100%);

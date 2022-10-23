@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wheather</title>
+    <title>Weather</title>
     <link rel="stylesheet" href="./client/css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header-wheather">
         <div class="header-bar-content">
             <div>
                 
@@ -29,6 +29,23 @@
                         <a class="sign-up" href="#" title="S'inscrire">S'inscrire</a>
                     </li>
                 </ul>
+            </div>
+        </div>
+        <div class="data-class-date-weather">
+            <div class="city-content">
+                <p class="city"></p>
+            </div>
+            <div class="date-content">
+                <p class="date-class"></p>
+            </div>
+            <div class="deg-content">
+                <p class="deg">0</p>
+            </div>
+            <div class="weather-img-content">
+                <img class="weather-img" src="#" alt="Weather">
+            </div>
+            <div class="description-content">
+                <p class="description"></p>
             </div>
         </div>
         <div>
@@ -100,7 +117,7 @@
                 </div>
                 <div class="title-seconds-content">
                     <h2 class="title-seconds-primary">Accées a un graphique en <span class="mega-charactere">temps réel</span> !</h2>
-                    <p>
+                    <p class="parg">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio autem quae quibusdam, doloremque nisi dolorum delectus quia fuga, velit nulla et! Delectus vero sint itaque beatae culpa suscipit vitae eaque!
                     </p>
                 </div>
@@ -108,11 +125,11 @@
             <section class="section-two">
                 <div class="subscribe-content">
                     <div class="subscribe-all">
-                        <div class="subscribe-one">
-
+                        <div class="subscribe-one addThree default">
+                            
                         </div>
                         <div class="subscribe-two">
-    
+                            
                         </div>
                         <div class="subscribe-three">
     
@@ -135,5 +152,7 @@
         </div>
     </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js" defer></script>
+<script src="./client/js/API/weather/main/main-api.js" defer></script>
 <script src="./client/js/app.js" defer></script>
 </html>
