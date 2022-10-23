@@ -1,12 +1,14 @@
 @charset "UTF-8";
 /** Ici sera les polices d'écriture. */
 @font-face {
-  font-family: "Comfortaa-Regular";
-  src: url("/res/font/Comfortaa-Regular.ttf");
+  font-family: "comfortaaregular";
+  src: url("/res/font/comfortaa-regular-webfont.woff2") format("woff2"), url("/res/font/comfortaa-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "MordernSans-Light";
-  src: url("/res/font/ModernSans-Light.otf");
+  src: url("/res/font/ModernSans-Light.otf") format("otf");
 }
 /** Ici sera les webkit */
 body::-webkit-scrollbar {
@@ -21,7 +23,7 @@ body::-webkit-scrollbar-thumb {
 html {
   scroll-behavior: smooth;
   /** Ici seront les variable CSS */
-  --wt-text-primary-font: "Comfortaa-Regular";
+  --wt-text-primary-font: "comfortaaregular";
   --wt-text-seconds-font: "MordernSans-Light";
   --wt-text-seconds-font-size: 25px;
   --wt-text-link-text-decoration-default: none;
@@ -176,7 +178,7 @@ body header .title-main {
 }
 body header h1 {
   margin: 10px;
-  font-family: var(--wt-text-primary-font, "Comfortaa-Regular");
+  font-family: var(--wt-text-primary-font, "comfortaaregular");
 }
 body header .parag-header {
   font-family: var(--wt-text-seconds-font, "MordernSans-Light");

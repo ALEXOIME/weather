@@ -78,7 +78,7 @@ setInterval(() => {
 
         des.innerHTML=data.weather[0].description;
         
-        degContent.innerHTML = Math.round(data.main.temp-273,1)+'<sup></sup>'; if(new Date().valueOf()>=data.sys.sunset){
+        degContent.innerHTML = Math.round(data.main.temp-273,1)+'C<sup>°</sup>'; if(new Date().valueOf()>=data.sys.sunset){
 
             headerWeather.classList.add('sunset');
 
