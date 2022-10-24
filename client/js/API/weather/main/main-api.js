@@ -51,18 +51,24 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=Limé&exclude=hourly,da
     degContent.innerHTML = Math.round(data.main.temp-273,1)+'C<sup>°</sup>'; if(new Date().valueOf()>=data.sys.sunset){
 
         headerWeather.classList.add('sunset');
+        headerWeather.classList.remove('night');
+        headerWeather.classList.remove('sunrise');
+        headerWeather.classList.remove('clear')
+
 
     }if(new Date().valueOf()>=data.sys.sunset+60*60*60){
 
+        headerWeather.classList.remove('sunset');
         headerWeather.classList.add('night');
+        headerWeather.classList.remove('sunrise');
+        headerWeather.classList.remove('clear')
 
-    }if(new Date().valueOf()>=data.sys.sunrise){
-
-        headerWeather.classList.add('sunrise');
-
-    }if(new Date().valueOf()>data.sys.sunrise+60*60*60){
-
-        headerWeather.classList.add('clear')
+    }if(new Date().valueOf()<=data.sys.sunrise){
+        
+        headerWeather.classList.remove('sunset');
+        headerWeather.classList.remove('night');
+        headerWeather.classList.add('sunride');
+        headerWeather.classList.remove('clear')
 
     }
 
